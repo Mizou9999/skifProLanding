@@ -1,0 +1,10 @@
+.links a {
+   font-style: normal;
+    font-weight: 700 !important;
+    font-size: 18px;
+    line-height: 26px;
+    -webkit-font-feature-settings: 'liga' off;
+    font-feature-settings: 'liga' off;
+    color: #262A4E, 100%  !important;
+    margin-bottom: 12px;
+}

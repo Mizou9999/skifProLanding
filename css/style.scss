@@ -1,0 +1,1181 @@
+@import "reset_style";
+
+
+
+
+
+
+iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+
+
+.btn_b
+{
+  width: 100%;
+  @include df(row,center,center);
+  max-width: 170px;
+
+  .btn_m
+  {
+    background-color: $main_color;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-font-feature-settings: 'liga' off;
+    font-feature-settings: 'liga' off;
+    color: #FCFCFC;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    &:hover
+    {
+      background-color: #3C5E8F;
+    }
+  }
+}
+
+
+.page
+{
+  overflow-x: hidden;
+  background-color:#2370C8;
+  
+  .header
+  {
+    z-index: 99;
+    width: 100%;
+    background-color: $white;
+
+    .mw
+    {
+      padding: 15px;
+      @include df(row,space-between,center);
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+
+      .left_side
+      {
+        .logo
+        {
+          width: 92px;
+          @include df(row,flex-start,center);
+
+          img
+          {
+            width: 100%;
+          }
+        }
+      }
+
+      .right_side
+      {
+        @include df(row,flex-end,center);
+
+        .nav
+        {
+          margin-right: 112px;
+
+          ul
+          {
+            @include df(row,flex-end,center);
+
+            li
+            {
+              a
+              {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                -webkit-font-feature-settings: 'liga' off;
+                font-feature-settings: 'liga' off;
+                color: #18191F;
+                white-space: nowrap;
+
+                &:hover
+                {
+                  color: $main_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main
+  {
+    background: url("../images/main_bg.jpg") no-repeat center center / cover;
+    position: relative;
+
+    &:after
+    {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      background: -o-linear-gradient(255.99deg, #D9E8EF 9.6%, #EAF2F5 89.64%);
+      background: linear-gradient(194.01deg, #D9E8EF 9.6%, #EAF2F5 89.64%);
+    }
+
+    .mw
+    {
+      padding: 20px 15px;
+      z-index: 2;
+
+      .main_cont
+      {
+        @include df(row,space-between,center);
+
+        .left_side
+        {
+          width: 60%;
+
+          p
+          {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 150%;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #2C2A5A;
+            margin-bottom: 30px;
+          }
+
+          .line
+          {
+            margin-top: 120px;
+            @include df(row,flex-start,flex-start);
+
+            .link
+            {
+              @include df(column,flex-start,flex-start);
+              margin-right: 54px;
+
+              .h5
+              {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 32px;
+                -webkit-font-feature-settings: 'liga' off;
+                font-feature-settings: 'liga' off;
+                color: #2C2A5A;
+                margin-bottom: 25px;
+              }
+
+              a
+              {
+                height: 40px;
+                margin-bottom: 15px;
+                @include df(row,center,center);
+
+                img
+                {
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .right_side
+        {
+          width: 40%;
+
+          .img
+          {
+            height: 700px;
+            @include df(row,flex-start,center);
+            margin-left: -100px;
+
+            img
+            {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .benefits
+  {
+    .mw
+    {
+      padding: 150px 15px 30px;
+      max-width: 1435px;
+
+      .m_title
+      {
+        @include df(column,center,center);
+        padding-bottom: 130px;
+
+        p
+        {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: #2370C8;
+          padding-bottom: 15px;
+        }
+
+        .h3
+        {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 56px;
+          color: #262A4E;
+        }
+      }
+
+      .cont
+      {
+        ul
+        {
+          @include df(row,center,flex-start);
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+          li
+          {
+            max-width: 250px;
+            margin: 0 50px 155px;
+            @include df(column,center,center);
+
+            .img
+            {
+              height: 115px;
+              @include df(row,center,center);
+              margin-bottom: 40px;
+
+              img
+              {
+                height: 100%;
+              }
+            }
+
+            .h5
+            {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 27px;
+              text-align: center;
+              color: #262A4E;
+            }
+
+            p
+            {
+              color: $dark2;
+              font-size: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contacts
+  {
+    background: #DCEAF0;
+
+    .mw
+    {
+      padding: 45px 15px 50px;
+
+      .cont_line
+      {
+        @include df(row,space-between,flex-start);
+
+        .left_side
+        {
+          .logo
+          {
+            width: 92px;
+            margin-bottom: 30px;
+
+            img
+            {
+              width: 100%;
+            }
+          }
+
+          .h5
+          {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #333333;
+            margin-bottom: 12px;
+          }
+
+          a
+          {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #262A4E;
+            display: block;
+            margin-bottom: 14px;
+          }
+        }
+
+        .address
+        {
+          max-width: 250px;
+          margin-top: 20px;
+
+          .h5
+          {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #333333;
+            margin-bottom: 15px;
+          }
+
+          p
+          {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #262A4E;
+          }
+        }
+
+        .right_side
+        {
+          margin-top: 20px;
+
+          p
+          {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            -webkit-font-feature-settings: 'liga' off;
+            font-feature-settings: 'liga' off;
+            color: #262A4E;
+          }
+        }
+      }
+
+      .soc_icons
+      {
+        @include df(column,center,center);
+        padding-top: 40px;
+
+        .h5
+        {
+          color: $white;
+          font-size: 24px;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+
+        ul
+        {
+          @include df(row,center,center);
+
+          li
+          {
+            a
+            {
+              @include df(row,center,center);
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              background-color: $main_color;
+              color: $white;
+              margin: 10px;
+
+              &:hover
+              {
+                background-color: $white;
+                color: $main_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer
+  {
+    background-color: $dark2;
+    padding: 2vh;
+
+    .mw
+    {
+      p
+      {
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 575px)
+{
+  .btn_b
+  {
+    .btn_more
+    {
+      padding: 15px;
+    }
+  }
+
+  .page
+  {
+    .header
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 60px;
+            }
+          }
+        }
+
+        .right_side
+        {
+          .nav
+          {
+            display: none;
+          }
+
+          .o_xs_menu
+          {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .sticky
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .xs_menu
+    {
+      display: block;
+    }
+
+    .main
+    {
+      .mw
+      {
+        .main_cont
+        {
+          .h1
+          {
+            font-size: 40px;
+            padding-bottom: 20px;
+          }
+
+          .h2
+          {
+            font-size: 20px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .about
+    {
+      .mw
+      {
+        .cont
+        {
+          .left_side
+          {
+            width: 100%;
+            margin-top: 15px;
+          }
+
+          .right_side
+          {
+            width: 100%;
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+
+            .m_title
+            {
+              .h3
+              {
+                text-align: left;
+              }
+            }
+
+            .h5
+            {
+              font-size: 16px;
+            }
+
+            ul
+            {
+              li
+              {
+                font-size: 16px;
+
+                .fas_icon
+                {
+                  font-size: 18px;
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .m_title
+    {
+      .h3
+      {
+        font-size: 28px;
+        text-align: center;
+
+        &:after
+        {
+          height: 6px;
+        }
+      }
+    }
+
+    .choose_product
+    {
+      .mw
+      {
+        .cont
+        {
+          @include df(column,center,center);
+
+          .left_side
+          {
+            width: 100%;
+
+            .h2
+            {
+              font-size: 30px;
+              text-align: center;
+            }
+          }
+
+          .right_side
+          {
+            width: 100%;
+            margin-top: 15px;
+
+            .btn_b
+            {
+              @include df(row,center,center);
+            }
+          }
+        }
+      }
+    }
+
+    .benefits
+    {
+      .mw
+      {
+        .m_title
+        {
+          .h3, .h5
+          {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .products
+    {
+      .cont
+      {
+        ul
+        {
+          li
+          {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+
+            a
+            {
+              .img
+              {
+                height: 200px;
+                @include df(row,center,flex-start);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .map
+    {
+      height: 100%;
+      position: relative;
+
+      .points_info
+      {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .contacts
+    {
+      .mw
+      {
+        .cont_line
+        {
+          ul
+          {
+            li
+            {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px)
+{
+  .page
+  {
+    .header
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 60px;
+            }
+          }
+        }
+
+        .right_side
+        {
+          .nav
+          {
+            display: none;
+          }
+
+          .o_xs_menu
+          {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .sticky
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .xs_menu
+    {
+      display: block;
+    }
+
+    .main
+    {
+      .mw
+      {
+        .main_cont
+        {
+          .h1
+          {
+            font-size: 45px;
+            padding-bottom: 20px;
+          }
+
+          .h2
+          {
+            font-size: 22px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .about
+    {
+      .mw
+      {
+        .cont
+        {
+          .left_side
+          {
+            width: 100%;
+            margin-top: 15px;
+          }
+
+          .right_side
+          {
+            width: 100%;
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+
+            .m_title
+            {
+              .h3
+              {
+                text-align: left;
+              }
+            }
+
+            .h5
+            {
+              font-size: 16px;
+            }
+
+            ul
+            {
+              li
+              {
+                font-size: 16px;
+
+                .fas_icon
+                {
+                  font-size: 18px;
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .m_title
+    {
+      .h3
+      {
+        text-align: center;
+
+        &:after
+        {
+          height: 6px;
+        }
+      }
+    }
+
+    .choose_product
+    {
+      .mw
+      {
+        .cont
+        {
+          @include df(column,center,center);
+
+          .left_side
+          {
+            width: 100%;
+
+            .h2
+            {
+              font-size: 30px;
+              text-align: center;
+            }
+          }
+
+          .right_side
+          {
+            width: 100%;
+            margin-top: 15px;
+
+            .btn_b
+            {
+              @include df(row,center,center);
+            }
+          }
+        }
+      }
+    }
+
+    .benefits
+    {
+      .mw
+      {
+        .m_title
+        {
+          .h3, .h5
+          {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .products
+    {
+      .cont
+      {
+        ul
+        {
+          li
+          {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+
+            a
+            {
+              .img
+              {
+                height: 200px;
+                @include df(row,center,flex-start);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .map
+    {
+      height: 100%;
+      position: relative;
+
+      .points_info
+      {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .contacts
+    {
+      .mw
+      {
+        .cont_line
+        {
+          ul
+          {
+            li
+            {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .page
+  {
+    .header
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 60px;
+            }
+          }
+        }
+
+        .right_side
+        {
+          .nav
+          {
+            display: none;
+          }
+
+          .o_xs_menu
+          {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .sticky
+    {
+      .mw
+      {
+        .left_side
+        {
+          .logo
+          {
+            a
+            {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .xs_menu
+    {
+      display: block;
+    }
+
+    .main
+    {
+      .mw
+      {
+        .main_cont
+        {
+          .h1
+          {
+            font-size: 45px;
+            padding-bottom: 20px;
+          }
+
+          .h2
+          {
+            font-size: 22px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .about
+    {
+      .mw
+      {
+        .right_side
+        {
+          .m_title
+          {
+            .h3
+            {
+              text-align: left;
+            }
+          }
+
+          .h5
+          {
+            font-size: 16px;
+          }
+
+          ul
+          {
+            li
+            {
+              font-size: 16px;
+
+              .fas_icon
+              {
+                font-size: 18px;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .m_title
+    {
+      .h3
+      {
+        text-align: center;
+
+        &:after
+        {
+          height: 6px;
+        }
+      }
+    }
+
+    .choose_product
+    {
+      .mw
+      {
+        .cont
+        {
+          .left_side
+          {
+            .h2
+            {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .benefits
+    {
+      .mw
+      {
+        .m_title
+        {
+          .h3, .h5
+          {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .products
+    {
+      .cont
+      {
+        ul
+        {
+          li
+          {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+
+            a
+            {
+              .img
+              {
+                height: 200px;
+                @include df(row,center,flex-start);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contacts
+    {
+      .mw
+      {
+        .cont_line
+        {
+          ul
+          {
+            li
+            {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
