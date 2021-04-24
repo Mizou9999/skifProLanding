@@ -92,3 +92,17 @@ line-height: 140%;
 .bold{
     font-weight: 700 !important;
 }
+.requests{
+    width:60%; 
+}
+.requests .title{
+    
+    font-weight: bold !important;
+}
+.requests p {
+    font-size: 12px !important;
+
+}
+.requests p a {
+    color: #5477A9
+}
