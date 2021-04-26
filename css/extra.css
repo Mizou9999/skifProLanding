@@ -126,10 +126,31 @@ line-height: 140%;
     }
   
 }
+@media (max-width: 765px) {
+    .page .main:after{
+        width: 100%;
+    }
+    .page .main .mw .main_cont{
+        display: flex  !important;
+        flex-direction: column !important;
+    }
+    .page .main .mw .main_cont .left_side{
+        order:2;
+        width:100%
+    }
+    .page .main .mw .main_cont .right_side{
+        width: 100%;
+    }
+    .page .main .mw .main_cont .right_side .img img {
+        margin-left: 138px;
+    }
+    .page .main .mw .main_cont .right_side .img{
+        height:auto
+    }
+    
+}
 @media (max-width: 575px) {
-    .page .header .mw{
-       background-color:yellow  !important
-   }
+   
     .page .contacts .mw .cont_line .left_side a, .page .contacts .mw .cont_line .address p{
         font-size: 13px !important;
     }
