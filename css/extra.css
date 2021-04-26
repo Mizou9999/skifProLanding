@@ -103,7 +103,7 @@ line-height: 140%;
     font-size: 12px !important;
 
 }
-.requests p a {
+.requests p a , .link {
     color: #5477A9
 }
 .mb-1{
@@ -116,3 +116,46 @@ line-height: 140%;
     display:flex;
     justify-content: space-between;
 }
+.responsive_picture{
+    max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .page .contacts .mw .cont_line .left_side a, .page .contacts .mw .cont_line .address p{
+        font-size: 14px !important;
+    }
+  
+}
+@media (max-width: 575px) {
+    .page .header .mw{
+       background-color:yellow  !important
+   }
+    .page .contacts .mw .cont_line .left_side a, .page .contacts .mw .cont_line .address p{
+        font-size: 13px !important;
+    }
+    .cont_line{
+        text-align:center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .cont_line .left_side , .cont_line .address{
+        margin-top:20px !important
+    }
+ }
+ @media (min-width:575px ) and (max-width: 768px) {
+      
+    .cont_line{
+        text-align:center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .cont_line .left_side , .cont_line .address{
+        margin-top:20px !important
+    }
+ }
